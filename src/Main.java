@@ -41,7 +41,20 @@ public class Main {
         }
     }
     public static void task4() {
+        int deliveryDistance = 95;
+        int deliveryDays = 0;
         System.out.println("Задача 4");
+        if (deliveryDistance<=20){
+            deliveryDays =deliveryDays +1;
+        } else if (deliveryDistance <=60) {
+            deliveryDays =deliveryDays +2;
+        } else if (deliveryDistance <=100) {
+            deliveryDays =deliveryDays +3;
+        }else {
+            System.out.println("Доставка не осуществляется");
+        }
+
+        if (deliveryDays !=0) System.out.println("Потребуется дней: "+ deliveryDays);
     }
     public static void task5() {
         System.out.println("Задача 5");
